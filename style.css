@@ -50,6 +50,13 @@
   background-color: white;
 }
 
+.big-width-btn{
+  width: 105px;
+}
+.big-width-btn-eql{
+  width: 100px;
+}
+
 .button:hover {
   background-color: black;
   color: white;
