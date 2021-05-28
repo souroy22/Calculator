@@ -1,0 +1,83 @@
+.main-container {
+  /* border: 2px solid black; */
+  width: 500px;
+  /* height: 800px; */
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #242b2e;
+  box-shadow: 8px 8px 5px gray;
+}
+
+#screen {
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  min-height: 70px;
+  text-align: end;
+  font-size: 50px;
+  background-color: #22cb5c;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+#screen::-webkit-scrollbar {
+  display: none;
+}
+
+.buttons-container {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 20px;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.03);
+  box-shadow: 0px 0px 7px whitesmoke;
+}
+
+.red-clr {
+  background-color: #e21717;
+  color: #242b2e;
+}
+
+.red-clr:hover {
+  color: #e21717;
+}
+
+.green-clr {
+  background-color: #00d84a;
+  color: whitesmoke;
+  font-weight: bolder;
+}
+
+.yellow-btn{
+  background-color: #F7CD2E;
+  font-weight: bolder;
+}
+
+.purple-btn{
+  background-color: #8D3DAF;
+  font-size: 40px;
+}
