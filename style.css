@@ -1,7 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .main-container {
-  /* border: 2px solid black; */
   width: 500px;
-  /* height: 800px; */
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -50,10 +54,10 @@
   background-color: white;
 }
 
-.big-width-btn{
+.big-width-btn {
   width: 105px;
 }
-.big-width-btn-eql{
+.big-width-btn-eql {
   width: 100px;
 }
 
@@ -79,12 +83,12 @@
   font-weight: bolder;
 }
 
-.yellow-btn{
-  background-color: #F7CD2E;
+.yellow-btn {
+  background-color: #f7cd2e;
   font-weight: bolder;
 }
 
-.purple-btn{
-  background-color: #8D3DAF;
+.purple-btn {
+  background-color: #8d3daf;
   font-size: 40px;
 }

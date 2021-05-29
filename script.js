@@ -16,6 +16,27 @@ function buttonClick(event, value) {
   ) {
     return;
   }
+  if (
+    value == "+" ||
+    value == "-" ||
+    value == "*" ||
+    value == "/" ||
+    value == "%" ||
+    value == "^"
+  ) {
+    let temp = screenDiv.innerText;
+    temp = temp[temp.length - 1];
+    console.log(temp);
+    if (
+      temp == "+" ||
+      temp == "-" ||
+      temp == "*" ||
+      temp == "/" ||
+      temp == "%"
+    ) {
+      return;
+    }
+  }
   // let temp = screenDiv.innerText;
 
   if (value === "=") {
@@ -46,10 +67,14 @@ function removeLast() {
   screenDiv.innerText = temp.slice(0, -1);
 }
 
-document.addEventListener("keypress", function onEvent(event) {
+document.addEventListener("keypress", function(event) {
+  if(event.code === "Backspace"){
+    removeLast();
+    return;
+  }
   if (event.key === "Enter" || event.key === "=") {
     buttonClick(event, "=");
-  } else if (event.key == "Backspace") {
+  } else if (event.key === "Backspace") {
     removeLast();
   } else if (event.key === "+") {
     buttonClick(event, "+");
